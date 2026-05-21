@@ -20,6 +20,9 @@ app.use(
   })
 );
 
+app.get('/', (req, res) => {
+   res.send('Backend is running successfully!');
+    });
 app.use('/api/auth', authRoutes);
 
 app.use(errorHandler);
